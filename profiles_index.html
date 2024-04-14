@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles - CollaboratorConnect</title>
+    <link rel="stylesheet" href="profiles_styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="landing-page">
+        <header>
+          <div class="container">
+            <a href="#" class="logo">Collaborator<b>Connect</b></a>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html"></a>About</li>
+              <li><a href="profiles_index.html">Profiles</a></li>
+              <li><a href="projects_index.html">Projects</a></li>
+              <li>Contact</li>
+              <li>Dashboard</li>
+              <li><a>Sign Up</a></li>
+            </ul>
+          </div>
+        </header>
+        <!-- Header ends -->
+
+        <div class="content">
+            <div class="container">
+
+            <!-- Heading -->
+            <div id="about" class="info">
+              <h1>Find your teammates</h1>
+              <!-- <p>CollaboratorConnect is a platform designed to help users find teammates for hackathons and projects. Whether you're an individual looking to join a team or a team looking for additional members, CollaboratorConnect provides the tools you need to connect with like-minded individuals and build amazing projects together.</p> -->
+              <!-- <button>Sign Up</button> -->
+            </div>
+    
+    <input type="text" id="searchBar" placeholder="Search..." oninput="searchProfiles()">
+    <br><br>
+    <!-- Heading ends -->
+
+    <!-- Profile Cards -->
+    <div class="profiles-container">
+        <div class="profile-card" onclick="openProfilePopup('Akshat Yadav', 'profile-image.jpg', 4.5, ['HTML', 'CSS', 'JavaScript'], 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', ['Great team player!', 'Excellent communicator'])">
+            <div class="front">
+                <img src="https://static.vecteezy.com/system/resources/previews/007/409/979/original/people-icon-design-avatar-icon-person-icons-people-icons-are-set-in-trendy-flat-style-user-icon-set-vector.jpg" alt="Profile Image">
+                <h2>Akshat Yadav</h2>
+                <p>Rating: 4.5</p>
+            </div>
+            <div class="back">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML <br><progress value="80" max="100"></progress></li>
+                    <li>CSS <br><progress value="70" max="100"></progress></li>
+                    <li>JavaScript <br><progress value="90" max="100"></progress></li>
+                </ul>
+                <p>Contact: abcd@example.com</p>
+                <p>Location: Delhi, India</p>
+            </div>
+        </div>
+        
+        <div class="profile-card" onclick="openProfilePopup('Raghav Garg', 'profile-image.jpg', 4.8, ['C++', 'Python'], 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', ['Great team player!', 'Excellent communicator'])">
+            <div class="front">
+                <img src="https://static.vecteezy.com/system/resources/previews/007/409/979/original/people-icon-design-avatar-icon-person-icons-people-icons-are-set-in-trendy-flat-style-user-icon-set-vector.jpg" alt="Profile Image">
+                <h2>Raghav Garg</h2>
+                <p>Rating: 4.8</p>
+            </div>
+            <div class="back">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C++ <br><progress value="80" max="100"></progress></li>
+                    <li>Python <br><progress value="70" max="100"></progress></li>
+                    <!-- <li>JavaScript <progress value="90" max="100"></progress></li> -->
+                </ul>
+                <p>Contact: abcd@example.com</p>
+                <p>Location: Delhi, India</p>
+            </div>
+        </div>
+
+        <div class="profile-card" onclick="openProfilePopup('Ananya Singh', 'profile-image.jpg', 3.5, ['HTML', 'CSS', 'JavaScript'], 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', ['Great team player!', 'Excellent communicator'])">
+            <div class="front">
+                <img src="https://static.vecteezy.com/system/resources/previews/007/409/979/original/people-icon-design-avatar-icon-person-icons-people-icons-are-set-in-trendy-flat-style-user-icon-set-vector.jpg" alt="Profile Image">
+                <h2>Ananya Singh</h2>
+                <p>Rating: 3.5</p>
+            </div>
+            <div class="back">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML <br><progress value="80" max="100"></progress></li>
+                    <li>CSS <br><progress value="70" max="100"></progress></li>
+                    <li>JavaScript <br><progress value="90" max="100"></progress></li>
+                </ul>
+                <p>Contact: abcd@example.com</p>
+                <p>Location: Delhi, India</p>
+            </div>
+        </div>
+
+        <div class="profile-card" onclick="openProfilePopup('Jiya Mishra', 'profile-image.jpg', 3.8, ['C++', 'Python','Java'], 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', ['Great team player!', 'Excellent communicator'])">
+            <div class="front">
+                <img src="https://static.vecteezy.com/system/resources/previews/007/409/979/original/people-icon-design-avatar-icon-person-icons-people-icons-are-set-in-trendy-flat-style-user-icon-set-vector.jpg" alt="Profile Image">
+                <h2>Jiya Mishra</h2>
+                <p>Rating: 3.8</p>
+            </div>
+            <div class="back">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C++ <br><progress value="80" max="100"></progress></li>
+                    <li>Python <br><progress value="70" max="100"></progress></li>
+                    <li>Java <br><progress value="90" max="100"></progress></li>
+                    <!-- <li>JavaScript <progress value="90" max="100"></progress></li> -->
+                </ul>
+                <p>Contact: abcd@example.com</p>
+                <p>Location: Delhi, India</p>
+            </div>
+        </div>
+
+        <div class="profile-card" onclick="openProfilePopup('Yashika Makkar', 'profile-image.jpg', 4.8, ['C++', 'Python'], 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', ['Great team player!', 'Excellent communicator'])">
+            <div class="front">
+                <img src="https://static.vecteezy.com/system/resources/previews/007/409/979/original/people-icon-design-avatar-icon-person-icons-people-icons-are-set-in-trendy-flat-style-user-icon-set-vector.jpg" alt="Profile Image">
+                <h2>Yashika Makkar</h2>
+                <p>Rating: 4.8</p>
+            </div>
+            <div class="back">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C++ <br><progress value="80" max="100"></progress></li>
+                    <li>Python <br><progress value="90" max="100"></progress></li>
+                    <!-- <li>JavaScript <progress value="90" max="100"></progress></li> -->
+                </ul>
+                <p>Contact: abcd@example.com</p>
+                <p>Location: Delhi, India</p>
+            </div>
+        </div>
+
+        <div class="profile-card" onclick="openProfilePopup('Rohit Kakkar', 'profile-image.jpg', 4.0, ['C++', 'Python','Java'], 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum debitis? Sunt maiores quaerat iste consequatur, in praesentium fugit.', ['Great team player!', 'Excellent communicator'])">
+            <div class="front">
+                <img src="https://static.vecteezy.com/system/resources/previews/007/409/979/original/people-icon-design-avatar-icon-person-icons-people-icons-are-set-in-trendy-flat-style-user-icon-set-vector.jpg" alt="Profile Image">
+                <h2>Rohit Kakkar</h2>
+                <p>Rating: 4.0</p>
+            </div>
+            <div class="back">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C++ <br><progress value="80" max="100"></progress></li>
+                    <li>Python <br><progress value="70" max="100"></progress></li>
+                    <li>Java <br><progress value="50" max="100"></progress></li>
+                    <!-- <li>JavaScript <progress value="90" max="100"></progress></li> -->
+                </ul>
+                <p>Contact: abcd@example.com</p>
+                <p>Location: Delhi, India</p>
+            </div>
+        </div>
+
+    </div>
+
+        <!-- Profile Cards ends -->
+        <div id="profilePopup" class="modal">
+            <div class="modal-content">
+                <!-- Profile details will be dynamically added here -->
+                <span class="close" onclick="closeProfilePopup()">&times;</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <footer>
+        <p>CollaboratorConnect &copy; 2024. Made by Anandita Chaudhary. All rights reserved.</p>
+    </footer>
+    <script src="profiles_script.js"></script>
+</body>
+</html>

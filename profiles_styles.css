@@ -1,0 +1,321 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* margin: 0;
+    padding: 0; */
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+        width: auto;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+        width: auto;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      /* width: 1170px; */
+      width: auto;
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+  }
+  /* End Global Rules */
+  
+  /* Start Landing Page */
+  .landing-page header {
+    min-height: 80px;
+    display: flex;
+  }
+  @media (width: auto) {
+    .landing-page header {
+      min-height: auto;
+      display: initial;
+    }
+  }
+  .landing-page header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media (max-width: 767px) {
+    .landing-page header .container {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .landing-page header .logo {
+    color: #5d5d5d;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  @media (max-width: 767px) {
+    .landing-page header .logo {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .landing-page header .links {
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+    font-size: 15px;
+  }
+  @media (max-width: 900px) {
+    .landing-page header .links {
+      text-align: center;
+      gap: 10px;
+      margin-left: 2px;
+    }
+  }
+  .landing-page header .links li {
+    margin-left: 30px;
+    color: #5d5d5d;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 18px;
+  }
+  @media (max-width: 767px) {
+    .landing-page header .links li {
+      margin-left: auto;
+    }
+  }
+  .landing-page header .links li:last-child {
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: #6c63ff;
+    font-size: 15px;
+  }
+  .landing-page header .links li:not(:last-child):hover {
+    color: #6c63ff;
+  }
+  .landing-page .content .container {
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between; */
+    /* gap: 140px; */
+    min-height: calc(100vh - 80px);
+  }
+  @media (max-width: 767px) {
+    .landing-page .content .container {
+      gap: 0;
+      min-height: calc(100vh - 101px);
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+  }
+  @media (max-width: 767px) {
+    .landing-page .content .info {
+      text-align: center;
+      margin-bottom: 15px 
+    }
+  }
+  .landing-page .content .info h1 {
+    color: #5d5d5d;
+    font-size: 44px;
+    align-items: center;
+    text-align: center;
+  }
+  .landing-page .content .info p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #5d5d5d;
+  }
+  .landing-page .content .info button {
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #6c63ff;
+    width: fit-content;
+  }
+  .landing-page .content .image img {
+    max-width: 100%;
+  }
+
+footer {
+    background-color: #3a3687;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: auto;
+}
+
+/* Search bar styling */
+input[type="text"]#searchBar {
+    float: right;
+    margin-top: 15px;
+    padding: 8px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+
+/* Profile card styling */
+.profiles-container {
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.profile-card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 20px;
+    border: 1px solid #6c63ff;
+    border-radius: 7px;
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.profile-card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.profile-card:hover .back {
+    transform: rotateY(0deg);
+}
+
+.front {
+    background-color: #6b63ff1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #6c63ff;
+    border-color: #6c63ff;
+}
+
+.front img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.front h2, .front p {
+    margin: 5px;
+}
+
+.back {
+    background-color:#6b63ff1a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.back img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.back h2 {
+    margin-bottom: 10px;
+}
+
+.back ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.back ul li {
+    margin-bottom: 10px;
+}
+
+.back progress {
+    width: 200px;
+}
+
+/* Modal Popup CSS */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border: 3px solid #6c63ff;
+    border-radius: 7px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .profiles-container {
+        justify-content: center;
+    }
+    .profile-card {
+        margin: 10px;
+    }
+}
