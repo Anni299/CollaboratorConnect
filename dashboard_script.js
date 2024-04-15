@@ -44,8 +44,8 @@ function saveChanges() {
     editButton.addEventListener("click", editProfile);
 }
 
-const CLIENT_ID = "857025347569-qn0sjrhctnervgs7pehmo6q6sbei4baq.apps.googleusercontent.com";
-const API_KEY = "AIzaSyBc9GVaz_YKkZdFwAdmQmUi6qbUOYXpKNQ";
+const CLIENT_ID = "";
+const API_KEY = "";
 
 // Discovery doc URL for APIs used by the quickstart
 const DISCOVERY_DOC =
