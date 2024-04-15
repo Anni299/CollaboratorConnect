@@ -101,6 +101,10 @@ a {
     transition: .3s;
     font-size: 18px;
   }
+  .landing-page header .links li :visited{
+    text-decoration: none;
+    color: #5d5d5d;
+  }
   @media (max-width: 767px) {
     .landing-page header .links li {
       margin-left: auto;
